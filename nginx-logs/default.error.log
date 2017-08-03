@@ -1,0 +1,1 @@
+2017/08/03 20:53:14 [crit] 8#8: *2 connect() to unix:/run/php/php7.0-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 172.23.0.1, server: _, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php7.0-fpm.sock:", host: "localhost"

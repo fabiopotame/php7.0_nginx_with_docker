@@ -1,0 +1,17 @@
+2017/08/03 19:32:51 [emerg] 26#26: open() "/usr/local/nginx/fastcgi_params" failed (2: No such file or directory) in /etc/nginx/sites-enabled/default:8
+2017/08/03 19:33:41 [emerg] 26#26: open() "/usr/local/nginx/fastcgi_params" failed (2: No such file or directory) in /etc/nginx/sites-enabled/default:8
+2017/08/03 19:34:57 [emerg] 25#25: a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default.conf:2
+2017/08/03 19:35:31 [emerg] 25#25: a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default.conf:2
+2017/08/03 19:36:26 [emerg] 25#25: a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default.conf:2
+2017/08/03 19:36:41 [emerg] 25#25: a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default.conf:2
+2017/08/03 19:36:56 [emerg] 25#25: a duplicate default server for 0.0.0.0:80 in /etc/nginx/sites-enabled/default.conf:2
+2017/08/03 19:41:23 [emerg] 25#25: "user" directive is not allowed here in /etc/nginx/sites-enabled/default:1
+2017/08/03 20:05:45 [alert] 26#26: *7 open socket #12 left in connection 2
+2017/08/03 20:05:45 [alert] 26#26: *8 open socket #13 left in connection 3
+2017/08/03 20:05:45 [alert] 26#26: aborting
+2017/08/03 20:09:30 [error] 26#26: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "127.0.0.1"
+2017/08/03 20:09:30 [error] 26#26: *3 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.23.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2017/08/03 20:09:45 [error] 26#26: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 172.23.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "0.0.0.0"
+2017/08/03 20:09:45 [error] 26#26: *6 open() "/var/www/html/favicon.ico" failed (2: No such file or directory), client: 172.23.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "0.0.0.0", referrer: "http://0.0.0.0/"
+2017/08/03 20:42:52 [emerg] 6#6: "daemon" directive is duplicate in /etc/nginx/nginx.conf:87
+2017/08/03 20:43:58 [emerg] 26#26: "daemon" directive is duplicate in /etc/nginx/nginx.conf:87
