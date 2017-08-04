@@ -2,9 +2,20 @@ version: "2"
 
 services:
   web:
-    build: .
+    build: ./Dockerfiles/php7_nginx
+    links:
+      - mysql:mysql
     ports:
       - "80:80"
     volumes:
       - ./www:/var/www/html
       - ./nginx-logs/:/var/log/nginx/
+
+  mysql:
+    image: mysql
+    ports:
+      - 6603:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "pass"
+    volumes:
+      - ./mysql-datadir/:/var/lib/mysql
