@@ -1,5 +1,13 @@
-# php7.0_nginx_docker-compose
-Docker com PHP 7.0 com nginx
+# PHP 7.0 com Mysql
+Docker com PHP 7.0 com nginx e Mysql
+
+Necessário ter Docker instalado.
+
+Comando para executar o docker-compose (executar na pasta onde se encontra o arquivo docker-compose.yml)
+$ sudo docker-compose up -d --force-recreate --build
+
+ 
+# Comandos do Docker
 
 Exibe todos os container
 $ sudo docker ps -a
@@ -10,7 +18,6 @@ $ sudo docker volume ls
 Exibe todas as imagens
 $ sudo docker images -a
 
-# CUIDADO AO EXECUTAR OS SEGUINTES COMANDOS
 Pausa todos os container
 $ sudo docker ps -a -q  | xargs sudo docker stop
 
