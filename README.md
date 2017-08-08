@@ -3,10 +3,14 @@ Docker com PHP 7.0 com nginx e Mysql
  
 Necessário ter Docker instalado.
 
-### Comando para executar o docker-compose (executar na pasta onde se encontra o arquivo docker-compose.yml)
+
+
+#### Comando para executar o docker-compose (executar na pasta onde se encontra o arquivo docker-compose.yml)
 
 $ sudo docker-compose up -d --force-recreate --build
 
+ 
+ 
  
 # Comandos do Docker
 
