@@ -35,3 +35,6 @@ $ sudo docker images -q |xargs sudo docker rmi
 #### Remove todos os volumes
 $ sudo docker volume ls -qf dangling=true | xargs -r sudo docker volume rm
 
+#### Remove tudo
+$ sudo docker ps -a -q  | xargs sudo docker stop && sudo docker ps -a -q  | xargs sudo docker rm && sudo docker images -q |xargs sudo docker rmi && sudo docker volume ls -qf dangling=true | xargs -r sudo docker volume rm
+
