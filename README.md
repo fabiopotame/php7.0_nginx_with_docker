@@ -7,6 +7,10 @@ Necessário ter Docker instalado.
 
 #### Comando para executar o docker-compose (executar na pasta onde se encontra o arquivo docker-compose.yml)
 
+$ sudo docker-compose up -d
+
+#### Recria os containers e builda a imagem novamente.
+
 $ sudo docker-compose up -d --force-recreate --build
 
  
