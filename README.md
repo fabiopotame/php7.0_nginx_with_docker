@@ -40,5 +40,5 @@ $ sudo docker images -q |xargs sudo docker rmi
 $ sudo docker volume ls -qf dangling=true | xargs -r sudo docker volume rm
 
 #### Remove tudo
-$ sudo docker ps -a -q  | xargs sudo docker stop && sudo docker ps -a -q  | xargs sudo docker rm && sudo docker images -q |xargs sudo docker rmi && sudo docker volume ls -qf dangling=true | xargs -r sudo docker volume rm
+$ sudo docker ps -a -q  | xargs sudo docker stop && sudo docker ps -a -q -f  | xargs sudo docker rm -f && sudo docker images -q |xargs sudo docker rmi -f && sudo docker volume ls -qf dangling=true | xargs -r sudo docker volume rm -f
 
