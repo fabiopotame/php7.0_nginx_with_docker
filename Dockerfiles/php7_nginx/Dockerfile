@@ -16,6 +16,7 @@ RUN apt-get update \
     && apt-get install -y php-dev \
     && apt-get install -y php-gd \
     && apt-get install -y php-gmp \
+    && apt-get install -y unzip \
     && ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log \
     && apt-get clean
