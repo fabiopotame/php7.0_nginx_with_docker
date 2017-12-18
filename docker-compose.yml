@@ -16,6 +16,9 @@ services:
     ports:
       - 6603:3306
     environment:
-      MYSQL_ROOT_PASSWORD: "pass"
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_USERNAME: "root"
+      MYSQL_PASSWORD: "root"
+      MYSQL_DATABASE: "lumen"
     volumes:
       - ./mysql-datadir/:/var/lib/mysql/
